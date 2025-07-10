@@ -5,6 +5,11 @@ resource "azurerm_resource_group" "rg" {
 
 }
 
+h
+resource "azurerm_resource_group" "rg2" {
+  name     = "vansh2"
+  location = "East US"
+=======
 resource "azurerm _storage_account" "storage" {
   name                     = "vanshstorageaccount"
   resource_group_name      = azurerm_resource_group.rg.name
@@ -15,4 +20,5 @@ resource "azurerm _storage_account" "storage" {
   tags = {
     environment = "Terraform"
   }
+
 }
