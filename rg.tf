@@ -8,7 +8,8 @@ resource "azurerm_resource_group" "rg" {
 
 resource "azurerm_resource_group" "rg2" {
   name     = "vansh2"
-  location = "East US"}
+  location = "East US"
+}
 
 resource "azurerm_storage_account" "storage" {
   name                     = "vanshstorageaccount"
